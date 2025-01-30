@@ -115,11 +115,13 @@ const { data } = animeInfo;
                 </>
               )}
 
-              <iframe
-                src={data.trailer}
-                allowfullscreen
-                class="aspect-video rounded-lg"
-              />
+              {data.trailer && (
+                <iframe
+                  src={data.trailer}
+                  allowfullscreen
+                  class="aspect-video rounded-lg"
+                />
+              )}
 
               <WidgetTitle title="Daftar Episode" />
               <div class="flex flex-col gap-4 max-h-[500px] overflow-x-auto">

@@ -6,7 +6,7 @@ interface AnimeCard1 {
   episodes: string;
   releasedOn: string;
   batchId?: string;
-  episodeId?: string;
+  animeId?: string;
   href?: string;
   samehadakuUrl?: string;
 }

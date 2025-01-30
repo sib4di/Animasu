@@ -36,8 +36,8 @@ const recent = await recentService({ page });
               <WidgetTitle title="Episode Terbaru" />
               <AnimeList1
                 anime={{
-                  list: recent.data.episodeList,
-                  baseUrlPath: "/episode",
+                  list: recent.data.animeList,
+                  baseUrlPath: "/anime",
                 }}
               />
               <Pagination pagination={recent.pagination} />

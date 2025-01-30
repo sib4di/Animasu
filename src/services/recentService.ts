@@ -1,7 +1,7 @@
 import skuy from "@utils/skuy";
 
 interface RecentEpisodes {
-  episodeList: AnimeCard1[];
+  animeList: AnimeCard1[];
 }
 
 export default async function recentService(queryParam: {

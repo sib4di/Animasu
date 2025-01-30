@@ -4,7 +4,7 @@ interface Home {
   recent: {
     href?: string;
     samehadakuUrl?: string;
-    episodeList: AnimeCard1[];
+    animeList: AnimeCard1[];
   };
   batch: {
     href?: string;

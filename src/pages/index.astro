@@ -42,8 +42,8 @@ const home = await homeService();
         >
           <Carousel
             anime={{
-              list: home.data.recent.episodeList.slice(0, 5),
-              baseUrlPath: "/episode",
+              list: home.data.recent.animeList.slice(0, 5),
+              baseUrlPath: "/anime",
             }}
           />
           <Breadcrumb />
@@ -52,8 +52,8 @@ const home = await homeService();
               <WidgetTitle title="Episode Terbaru" href="/recent" />
               <AnimeList1
                 anime={{
-                  list: home.data.recent.episodeList,
-                  baseUrlPath: "/episode",
+                  list: home.data.recent.animeList,
+                  baseUrlPath: "/anime",
                 }}
               />
               <WidgetTitle title="Download Batch Anime" href="/batch" />

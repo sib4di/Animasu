@@ -82,7 +82,7 @@ const seo: SEOProps = {
 
     <!-- DYNAMIC CONTENT -->
     <main id="main" class="container min-h-screen relative">
-      <div id="leluhur" class="flex flex-col gap-3">
+      <div id="leluhur" class="hidden flex-col gap-3">
         <slot />
       </div>
 
@@ -186,16 +186,13 @@ const seo: SEOProps = {
   })();
 
   // MENGATUR LOADING
-  document.addEventListener("readystatechange", () => {
+  document.addEventListener("DOMContentLoaded", () => {
     const leluhurEl = document.getElementById("leluhur");
     const spinnerWrapperEl = document.getElementById("spinner-wrapper");
 
-    leluhurEl.classList.add("hidden");
-
-    if (document.readyState === "complete") {
-      leluhurEl.classList.remove("hidden");
-      spinnerWrapperEl.classList.add("hidden");
-    }
+    leluhurEl.classList.remove("hidden");
+    leluhurEl.classList.add("flex");
+    spinnerWrapperEl.classList.add("hidden");
   });
 </script>
 
